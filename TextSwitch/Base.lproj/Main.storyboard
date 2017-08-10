@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,37 +22,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-7T-kaB">
-                                <rect key="frame" x="67" y="205.5" width="240" height="256"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTS-ei-uTr" customClass="UITextSwitch">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="FFn-ag-LDb"/>
-                                            <constraint firstAttribute="height" constant="128" id="JLf-Vp-eh8"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6JB-ve-ann" customClass="UITextSwitch">
-                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="LwN-Yd-b2S"/>
-                                            <constraint firstAttribute="width" constant="240" id="vtQ-sz-Tr0"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-pV-7wp" customClass="UITextSwitch">
+                                <rect key="frame" x="26" y="40" width="320" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="VAZ-yM-GzO"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8f-NK-Tpp"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBD-Cz-1b2" customClass="UITextSwitch">
+                                <rect key="frame" x="54" y="216" width="220" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xgP-hB-2Mz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="onText" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="offText" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="switchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZjU-Aa-8er"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eFA-7T-kaB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N6z-uC-4cI"/>
-                            <constraint firstItem="eFA-7T-kaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p7J-Q2-BPu"/>
+                            <constraint firstItem="yMA-pV-7wp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="A7r-Sd-tYI"/>
+                            <constraint firstItem="rBD-Cz-1b2" firstAttribute="top" secondItem="yMA-pV-7wp" secondAttribute="bottom" constant="42" id="Cg5-Td-y8T"/>
+                            <constraint firstItem="yMA-pV-7wp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Q2F-gY-Iuy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yMA-pV-7wp" secondAttribute="trailing" constant="13" id="XDq-2l-bb3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rBD-Cz-1b2" secondAttribute="trailing" constant="85" id="ki0-ga-E2w"/>
+                            <constraint firstItem="rBD-Cz-1b2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="rE2-Iu-74A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="switchCollection" destination="yMA-pV-7wp" id="pJE-kB-H0y"/>
+                        <outletCollection property="switchCollection" destination="rBD-Cz-1b2" id="Wdg-iT-5cx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>

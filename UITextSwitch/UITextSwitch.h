@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE@interface UITextSwitch : UIControl
+IB_DESIGNABLE @interface UITextSwitch : UIControl
 
-@property (nonatomic) IBInspectable BOOL isOn;
+@property (nonatomic, readonly) IBInspectable BOOL isOn;
 @property (nonatomic, strong) IBInspectable NSString *offText;
 @property (nonatomic, strong) IBInspectable NSString *onText;
 @property (nonatomic, strong) IBInspectable UIColor *offColor;
@@ -18,5 +18,7 @@ IB_DESIGNABLE@interface UITextSwitch : UIControl
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @property (nonatomic, strong) IBInspectable UIColor *backgroundColor;
 @property (nonatomic) IBInspectable NSInteger borderWidth;
+
+- (void)setOn:(BOOL)on animated:(BOOL)animated;
 
 @end

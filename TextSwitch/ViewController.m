@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UITextSwitch.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutletCollection(UITextSwitch) NSArray *switchCollection;
 
 @end
 
@@ -25,5 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)switchPressed:(id)sender {
+    
+    UITextSwitch *item = sender;
+    [item setOn:!item.isOn animated:YES];
+}
 
 @end
