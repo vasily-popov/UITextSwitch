@@ -13,6 +13,7 @@
 		F085052C1F3CE31E00F99993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F085052A1F3CE31E00F99993 /* Main.storyboard */; };
 		F085052E1F3CE31E00F99993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F085052D1F3CE31E00F99993 /* Assets.xcassets */; };
 		F08505311F3CE31E00F99993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F085052F1F3CE31E00F99993 /* LaunchScreen.storyboard */; };
+		F085053B1F3CE34E00F99993 /* UITextSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F085053A1F3CE34E00F99993 /* UITextSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F085052D1F3CE31E00F99993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08505301F3CE31E00F99993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F08505321F3CE31E00F99993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08505391F3CE34E00F99993 /* UITextSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITextSwitch.h; path = UITextSwitch/UITextSwitch.h; sourceTree = "<group>"; };
+		F085053A1F3CE34E00F99993 /* UITextSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITextSwitch.m; path = UITextSwitch/UITextSwitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		F08505151F3CE31E00F99993 = {
 			isa = PBXGroup;
 			children = (
+				F08505381F3CE32700F99993 /* UITextSwitch */,
 				F08505201F3CE31E00F99993 /* TextSwitch */,
 				F085051F1F3CE31E00F99993 /* Products */,
 			);
@@ -77,6 +81,15 @@
 				F08505221F3CE31E00F99993 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F08505381F3CE32700F99993 /* UITextSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				F08505391F3CE34E00F99993 /* UITextSwitch.h */,
+				F085053A1F3CE34E00F99993 /* UITextSwitch.m */,
+			);
+			name = UITextSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				F08505291F3CE31E00F99993 /* ViewController.m in Sources */,
 				F08505261F3CE31E00F99993 /* AppDelegate.m in Sources */,
+				F085053B1F3CE34E00F99993 /* UITextSwitch.m in Sources */,
 				F08505231F3CE31E00F99993 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
