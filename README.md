@@ -11,11 +11,16 @@ Usage via Interface Builder
 Drag a custom view into your storyboard and change it’s class to “UITextSwitch”. Use the attributes inspector to optionally set the switch’s basic properties:
 
 offText/onText String
+
 isOn boolean
+
 offColor/onColor color
+
 borderColor color
+
 backgroundColor color
-borderWidth
+
+borderWidth float
 
 ![alt text](https://github.com/vascome/UITextSwitch/blob/master/offState.png)
 
