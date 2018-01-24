@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F06741B72018D9DF001EC5E8 /* UITwoStateSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F06741B62018D9DF001EC5E8 /* UITwoStateSwitch.m */; };
+		F06741C12019216B001EC5E8 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = F06741BF2019216A001EC5E8 /* UIImage+Color.m */; };
 		F08505231F3CE31E00F99993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F08505221F3CE31E00F99993 /* main.m */; };
 		F08505261F3CE31E00F99993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F08505251F3CE31E00F99993 /* AppDelegate.m */; };
 		F08505291F3CE31E00F99993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F08505281F3CE31E00F99993 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F06741B52018D9DF001EC5E8 /* UITwoStateSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITwoStateSwitch.h; sourceTree = "<group>"; };
+		F06741B62018D9DF001EC5E8 /* UITwoStateSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITwoStateSwitch.m; sourceTree = "<group>"; };
+		F06741BF2019216A001EC5E8 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		F06741C02019216B001EC5E8 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		F085051E1F3CE31E00F99993 /* TextSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08505221F3CE31E00F99993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F08505241F3CE31E00F99993 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,9 +48,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F06741B42018D992001EC5E8 /* UITwoStateSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				F06741C02019216B001EC5E8 /* UIImage+Color.h */,
+				F06741BF2019216A001EC5E8 /* UIImage+Color.m */,
+				F06741B52018D9DF001EC5E8 /* UITwoStateSwitch.h */,
+				F06741B62018D9DF001EC5E8 /* UITwoStateSwitch.m */,
+			);
+			path = UITwoStateSwitch;
+			sourceTree = "<group>";
+		};
 		F08505151F3CE31E00F99993 = {
 			isa = PBXGroup;
 			children = (
+				F06741B42018D992001EC5E8 /* UITwoStateSwitch */,
 				F08505381F3CE32700F99993 /* UITextSwitch */,
 				F08505201F3CE31E00F99993 /* TextSwitch */,
 				F085051F1F3CE31E00F99993 /* Products */,
@@ -165,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08505291F3CE31E00F99993 /* ViewController.m in Sources */,
+				F06741B72018D9DF001EC5E8 /* UITwoStateSwitch.m in Sources */,
 				F08505261F3CE31E00F99993 /* AppDelegate.m in Sources */,
+				F06741C12019216B001EC5E8 /* UIImage+Color.m in Sources */,
 				F085053B1F3CE34E00F99993 /* UITextSwitch.m in Sources */,
 				F08505231F3CE31E00F99993 /* main.m in Sources */,
 			);

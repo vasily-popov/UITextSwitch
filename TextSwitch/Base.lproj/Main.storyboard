@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,12 +49,55 @@
                                     <action selector="switchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZjU-Aa-8er"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeM-w4-4uS" customClass="UITwoStateSwitch">
+                                <rect key="frame" x="87" y="303" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TAt-PP-PmN"/>
+                                    <constraint firstAttribute="height" constant="80" id="wMd-qu-yVw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offTextColor">
+                                        <color key="value" red="0.50196078430000002" green="0.4039215686" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftText" value="ON"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="rightText" value="OFF"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftColor">
+                                        <color key="value" red="0.35294117650000001" green="0.69531122349999996" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightColor">
+                                        <color key="value" red="0.85490196080000003" green="0.1215686275" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offItemBorderColor">
+                                        <color key="value" red="0.90980392160000001" green="0.84313725490000002" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightIcon" value="lock"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftIcon" value="unlock"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yMA-pV-7wp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="A7r-Sd-tYI"/>
+                            <constraint firstItem="ZeM-w4-4uS" firstAttribute="top" secondItem="rBD-Cz-1b2" secondAttribute="bottom" constant="27" id="CfB-lW-J0T"/>
                             <constraint firstItem="rBD-Cz-1b2" firstAttribute="top" secondItem="yMA-pV-7wp" secondAttribute="bottom" constant="42" id="Cg5-Td-y8T"/>
                             <constraint firstItem="yMA-pV-7wp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Q2F-gY-Iuy"/>
+                            <constraint firstItem="ZeM-w4-4uS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UFm-eS-dVr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yMA-pV-7wp" secondAttribute="trailing" constant="13" id="XDq-2l-bb3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rBD-Cz-1b2" secondAttribute="trailing" constant="85" id="ki0-ga-E2w"/>
                             <constraint firstItem="rBD-Cz-1b2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="rE2-Iu-74A"/>
@@ -70,4 +113,8 @@
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lock" width="31" height="42"/>
+        <image name="unlock" width="20" height="25"/>
+    </resources>
 </document>

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UITextSwitch.h"
+#import "UITwoStateSwitch.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutletCollection(UITextSwitch) NSArray *switchCollection;
@@ -31,6 +32,12 @@
     
     UITextSwitch *item = sender;
     [item setOn:!item.isOn animated:YES];
+}
+
+- (IBAction)twoStateSwitchPressed:(id)sender {
+    
+    UITwoStateSwitch *item = sender;
+    [item setActive:!item.isActive animated:YES];
 }
 
 @end
