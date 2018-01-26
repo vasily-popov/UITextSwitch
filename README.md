@@ -5,7 +5,7 @@ UITextSwitch is a UIControl subclass which is similar to UISwitch, but with a te
 
 ![alt text](https://github.com/vascome/UITextSwitch/blob/master/onState.png)
 
-Installation
+### Installation
 
 Drag the “UITextSwitch.h and .m” file into your Xcode project
 
@@ -33,7 +33,7 @@ BTW UISwitch can state by any click at them.
 
 ![alt text](https://github.com/vascome/UITextSwitch/blob/master/twoStateSwitch.png)
 
-Installation
+### Installation
 
 Drag the “UITwoStateSwitch.h and .m” file into your Xcode project
 
@@ -41,7 +41,7 @@ Usage via Interface Builder
 
 Drag a custom view into your storyboard and change it’s class to “UITwoStateSwitch”. Use the attributes inspector to optionally set the switch’s basic properties:
 
-for left active state:
+#### left active state:
  leftText - text inside state ,NSString
  leftIcon - image inside state, UIImage
  leftColor - state backgorund color, UIColor 
@@ -49,7 +49,7 @@ for left active state:
  
  if leftIcon is set, left text is ignored.
  
-for right active state:
+#### right active state:
  rightText - text inside state ,NSString
  rightIcon - image inside state, UIImage
  rightColor - state backgorund color, UIColor 
@@ -57,14 +57,14 @@ for right active state:
  
  if rightIcon is set, right text is ignored.
 
-for inactive state (both right and left)
+#### inactive state (both right and left)
  
  offColor - state backgorund color,UIColor
  offColor - text color inside state, UIColor
  offItemBorderColor - border color for inactive state.
  
 
-generic control properties
+#### generic control properties
  borderColor - UIColor
  backgroundColor - UIColor
  borderWidth - float
